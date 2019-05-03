@@ -1,0 +1,38 @@
+{
+	"instanceDescValue": {
+		"type": "String",
+		"metadata": {
+			"displayName": "required value for instance descripton tag"
+		}
+    },
+    "instancePocValue": {
+		"type": "String",
+		"metadata": {
+			"displayName": "required value for instance POC tag"
+		}
+    },
+    "instanceAppValue": {
+		"type": "String",
+		"metadata": {
+			"displayName": "required value for instance application tag"
+		}
+    },
+    "instanceEnvValue": {
+		"type": "String",
+		"metadata": {
+			"displayName": "required value for instance environment tag"
+		}
+    },
+    "instanceCostCenterValue": {
+		"type": "String",
+		"metadata": {
+			"displayName": "required value for instance cost center tag"
+		}
+    },
+	"instanceNameValue": {
+		"type": "String",
+		"metadata": {
+			"displayName": "required value for instance name tag"
+		}
+	}
+}
