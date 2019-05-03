@@ -1,0 +1,181 @@
+{
+    "properties": {
+        "displayName": "Central IT - Standard Tag Initiative",
+        "description": "Specify standard tags used by Central IT",
+        "parameters": {
+            "instanceDescValue": {
+                "type": "String",
+                "metadata": {
+                    "displayName": "required value for instance descripton tag"
+                }
+            },
+            "instancePocValue": {
+                "type": "String",
+                "metadata": {
+                    "displayName": "required value for instance POC tag"
+                }
+            },
+            "instanceAppValue": {
+                "type": "String",
+                "metadata": {
+                    "displayName": "required value for instance application tag"
+                }
+            },
+            "instanceEnvValue": {
+                "type": "String",
+                "metadata": {
+                    "displayName": "required value for instance environment tag"
+                }
+            },
+            "instanceCostCenterValue": {
+                "type": "String",
+                "metadata": {
+                    "displayName": "required value for instance cost center tag"
+                }
+            },
+            "instanceNameValue": {
+                "type": "String",
+                "metadata": {
+                    "displayName": "required value for instance name tag"
+                }
+            }
+        },
+        "policyDefinitions": [
+            {
+                "policyDefinitionId": "/providers/Microsoft.Authorization/policyDefinitions/1e30110a-5ceb-460c-a204-c1c3969c6d62",
+                "parameters": {
+                    "tagName": {
+                        "value": "instanceDesc"
+                    },
+                    "tagValue": {
+                        "value": "[parameters('instanceDescValue')]"
+                    }
+                }
+            },
+            {
+                "policyDefinitionId": "/providers/Microsoft.Authorization/policyDefinitions/2a0e14a6-b0a6-4fab-991a-187a4f81c498",
+                "parameters": {
+                    "tagName": {
+                        "value": "instanceDesc"
+                    },
+                    "tagValue": {
+                        "value": "[parameters('instanceDescValue')]"
+                    }
+                }
+            },
+            {
+                "policyDefinitionId": "/providers/Microsoft.Authorization/policyDefinitions/1e30110a-5ceb-460c-a204-c1c3969c6d62",
+                "parameters": {
+                    "tagName": {
+                        "value": "instancePoc"
+                    },
+                    "tagValue": {
+                        "value": "[parameters('instancePocValue')]"
+                    }
+                }
+            },
+            {
+                "policyDefinitionId": "/providers/Microsoft.Authorization/policyDefinitions/2a0e14a6-b0a6-4fab-991a-187a4f81c498",
+                "parameters": {
+                    "tagName": {
+                        "value": "instancePoc"
+                    },
+                    "tagValue": {
+                        "value": "[parameters('instancePocValue')]"
+                    }
+                }
+            },
+            {
+                "policyDefinitionId": "/providers/Microsoft.Authorization/policyDefinitions/1e30110a-5ceb-460c-a204-c1c3969c6d62",
+                "parameters": {
+                    "tagName": {
+                        "value": "instanceApp"
+                    },
+                    "tagValue": {
+                        "value": "[parameters('instanceAppValue')]"
+                    }
+                }
+            },
+            {
+                "policyDefinitionId": "/providers/Microsoft.Authorization/policyDefinitions/2a0e14a6-b0a6-4fab-991a-187a4f81c498",
+                "parameters": {
+                    "tagName": {
+                        "value": "instanceApp"
+                    },
+                    "tagValue": {
+                        "value": "[parameters('instanceAppValue')]"
+                    }
+                }
+            },
+            {
+                "policyDefinitionId": "/providers/Microsoft.Authorization/policyDefinitions/1e30110a-5ceb-460c-a204-c1c3969c6d62",
+                "parameters": {
+                    "tagName": {
+                        "value": "instanceEnv"
+                    },
+                    "tagValue": {
+                        "value": "[parameters('instanceEnvValue')]"
+                    }
+                }
+            },
+            {
+                "policyDefinitionId": "/providers/Microsoft.Authorization/policyDefinitions/2a0e14a6-b0a6-4fab-991a-187a4f81c498",
+                "parameters": {
+                    "tagName": {
+                        "value": "instanceEnv"
+                    },
+                    "tagValue": {
+                        "value": "[parameters('instanceEnvValue')]"
+                    }
+                }
+            },
+            {
+                "policyDefinitionId": "/providers/Microsoft.Authorization/policyDefinitions/1e30110a-5ceb-460c-a204-c1c3969c6d62",
+                "parameters": {
+                    "tagName": {
+                        "value": "instanceCostCenter"
+                    },
+                    "tagValue": {
+                        "value": "[parameters('instanceCostCenterValue')]"
+                    }
+                }
+            },
+            {
+                "policyDefinitionId": "/providers/Microsoft.Authorization/policyDefinitions/2a0e14a6-b0a6-4fab-991a-187a4f81c498",
+                "parameters": {
+                    "tagName": {
+                        "value": "instanceCostCenter"
+                    },
+                    "tagValue": {
+                        "value": "[parameters('instanceCostCenterValue')]"
+                    }
+                }
+            },
+            {
+                "policyDefinitionId": "/providers/Microsoft.Authorization/policyDefinitions/1e30110a-5ceb-460c-a204-c1c3969c6d62",
+                "parameters": {
+                    "tagName": {
+                        "value": "instanceName"
+                    },
+                    "tagValue": {
+                        "value": "[parameters('instanceNameValue')]"
+                    }
+                }
+            },
+            {
+                "policyDefinitionId": "/providers/Microsoft.Authorization/policyDefinitions/2a0e14a6-b0a6-4fab-991a-187a4f81c498",
+                "parameters": {
+                    "tagName": {
+                        "value": "instanceName"
+                    },
+                    "tagValue": {
+                        "value": "[parameters('instanceNameValue')]"
+                    }
+                }
+            }
+        ]
+    },
+    "id": "/subscriptions/a48a924d-6007-4c39-a3c0-5466b9012f42/providers/Microsoft.Authorization/policySetDefinitions/billingTagsPolicy",
+    "type": "Microsoft.Authorization/policySetDefinitions",
+    "name": "standardTagsPolicy"
+}
